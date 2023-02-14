@@ -1,6 +1,6 @@
 name: mannkibaatpackage
 description: Mann ki Baat Package.
-version: 0.0.1
+version: 0.0.2
 homepage:
 
 environment:
@@ -42,18 +42,18 @@ dev_dependencies:
 flutter:
 
   # To add assets to your package, add an assets section, like this:
-  assets:
-    - assets/BJP-logo.png
-    - assets/sidebox.png
-    - assets/pm.png
-    - assets/pm2.png
-    - assets/formsuccess.png
-    - assets/footer.png
-    - assets/review1.png
-    - assets/language.png
-    - assets/review2.png
-    - assets/drawer_temp.png
-    - assets/formsuccess.png
+    assets:
+      - assets/BJP-logo.png
+      - assets/sidebox.png
+      - assets/pm.png
+      - assets/pm2.png
+      - assets/formsuccess.png
+      - assets/footer.png
+      - assets/review1.png
+      - assets/language.png
+      - assets/review2.png
+      - assets/drawer_temp.png
+      - assets/formsuccess.png
   #
   # For details regarding assets in packages, see
   # https://flutter.dev/assets-and-images/#from-packages
