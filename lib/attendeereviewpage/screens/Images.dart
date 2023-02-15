@@ -30,7 +30,7 @@ class ReviewImages extends StatelessWidget {
                     height: 200,
                     //extensions like .jpg, .png etc
                     errorBuilder: (context, error, stackTrace) => Image.asset(
-                          "assets/review1.png",
+                          "lib/assets/review1.png",
                           width: 120,
                           height: 200,
                         ))),
@@ -41,8 +41,8 @@ class ReviewImages extends StatelessWidget {
                     height: 200,
                     //extensions like .jpg, .png etc
                     errorBuilder: (context, error, stackTrace) => Image.asset(
-                          "assets/review2.png",
-                          width: 120,
+                          "lib/assets/review2.png",
+                          width:  100,
                           height: 200,
                         ))),
           ],

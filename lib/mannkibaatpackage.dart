@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mannkibaatpackage/reportedprogramspage/screens/Dashboard.dart';
 import 'package:mannkibaatpackage/values/AppColors.dart';
+
 class MainButton extends StatelessWidget {
   const MainButton({Key? key}) : super(key: key);
 
@@ -14,8 +15,8 @@ class MainButton extends StatelessWidget {
           shadowColor: MaterialStateProperty.all(AppColor().buttonShadowColor),
           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-              )),
+            borderRadius: BorderRadius.circular(10),
+          )),
           backgroundColor: MaterialStateProperty.all(AppColor().buttonColor),
         ),
         onPressed: () {

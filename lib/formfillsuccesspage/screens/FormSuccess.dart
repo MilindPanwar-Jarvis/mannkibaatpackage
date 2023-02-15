@@ -30,7 +30,7 @@ class FormSuccess extends StatelessWidget {
               Align(
                 alignment: Alignment.center,
                 child: Image(
-                  image: Image.asset("assets/formsuccess.png").image,
+                  image: Image.asset("lib/assets/formsuccess.png").image,
                   //width: 300,
                   height: 200,
                 ),
