@@ -45,8 +45,8 @@ flutter:
   uses-material-design: true
 
   assets:
-    - packages/mannkibaatpackage/lib/assets/BJP-logo.png
-    - packages/mannkibaatpackage/lib/assets/sidebox.png
+    - mannkibaatpackage/lib/assets/BJP-logo.png
+    - mannkibaatpackage/lib/assets/sidebox.png
     - packages/mannkibaatpackage/lib/assets/pm.png
     - packages/mannkibaatpackage/lib/assets/pm2.png
     - packages/mannkibaatpackage/lib/assets/formsuccess.png
