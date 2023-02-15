@@ -1,6 +1,6 @@
 name: mannkibaatpackage
 description: Mann ki Baat Package.
-version: 0.0.5
+version: 0.0.6
 homepage:
 
 environment:
@@ -45,17 +45,17 @@ flutter:
   uses-material-design: true
 
   assets:
-    - lib/assets/BJP-logo.png
-    - lib/assets/sidebox.png
-    - lib/assets/pm.png
-    - lib/assets/pm2.png
-    - lib/assets/formsuccess.png
-    - lib/assets/footer.png
-    - lib/assets/review1.png
-    - lib/assets/language.png
-    - lib/assets/review2.png
-    - lib/assets/drawer_temp.png
-    - lib/assets/formsuccess.png
+    - packages/mannkibaatpackage/lib/assets/BJP-logo.png
+    - packages/mannkibaatpackage/lib/assets/sidebox.png
+    - packages/mannkibaatpackage/lib/assets/pm.png
+    - packages/mannkibaatpackage/lib/assets/pm2.png
+    - packages/mannkibaatpackagelib/assets/formsuccess.png
+    - packages/mannkibaatpackagelib/assets/footer.png
+    - packages/mannkibaatpackagelib/assets/review1.png
+    - packages/mannkibaatpackagelib/assets/language.png
+    - packages/mannkibaatpackagelib/assets/review2.png
+    - packages/mannkibaatpackagelib/assets/drawer_temp.png
+    - packages/mannkibaatpackagelib/assets/formsuccess.png
   #
   # For details regarding assets in packages, see
   # https://flutter.dev/assets-and-images/#from-packages

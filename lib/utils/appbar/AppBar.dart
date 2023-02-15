@@ -17,7 +17,7 @@ class AppBarWidget {
                   globalKey.currentState?.openDrawer();
                 },
                 icon: Image(
-                    image: Image.asset("lib/assets/sidebox.png").image,
+                    image: Image.asset("packages/mannkibaatpackage/lib/assets/sidebox.png").image,
                     width: 26,
                     height: 18),
               ),
@@ -25,7 +25,7 @@ class AppBarWidget {
             Padding(
               padding: const EdgeInsets.only(right: 4),
               child: Image(
-                image: Image.asset("lib/assets/BJP-logo.png").image,
+                image: Image.asset("packages/mannkibaatpackage/lib/assets/BJP-logo.png").image,
                 width: 21,
                 height: 21,
               ),

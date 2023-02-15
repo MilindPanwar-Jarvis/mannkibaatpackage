@@ -32,7 +32,7 @@ class UserProfileDrawer extends StatelessWidget {
                         Center(
                           child: CircleAvatar(
                             radius: 40,
-                            backgroundImage: AssetImage('lib/assets/drawer_temp.png'),
+                            backgroundImage: AssetImage('packages/mannkibaatpackage/lib/assets/drawer_temp.png'),
                           ),
                         ),
                         Expanded(
