@@ -45,17 +45,17 @@ flutter:
   uses-material-design: true
 
   assets:
-    - mannkibaatpackage/lib/assets/BJP-logo.png
-    - mannkibaatpackage/lib/assets/sidebox.png
-    - packages/mannkibaatpackage/lib/assets/pm.png
-    - packages/mannkibaatpackage/lib/assets/pm2.png
-    - packages/mannkibaatpackage/lib/assets/formsuccess.png
-    - packages/mannkibaatpackage/lib/assets/footer.png
-    - packages/mannkibaatpackage/lib/assets/review1.png
-    - packages/mannkibaatpackage/lib/assets/language.png
-    - packages/mannkibaatpackage/lib/assets/review2.png
-    - packages/mannkibaatpackage/lib/assets/drawer_temp.png
-    - packages/mannkibaatpackage/lib/assets/formsuccess.png
+    - lib/assets/BJP-logo.png
+    - lib/assets/sidebox.png
+    - lib/assets/pm.png
+    - lib/assets/pm2.png
+    - lib/assets/formsuccess.png
+    - lib/assets/footer.png
+    - lib/assets/review1.png
+    - lib/assets/language.png
+    - lib/assets/review2.png
+    - lib/assets/drawer_temp.png
+    - lib/assets/formsuccess.png
   #
   # For details regarding assets in packages, see
   # https://flutter.dev/assets-and-images/#from-packages
