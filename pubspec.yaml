@@ -49,13 +49,13 @@ flutter:
     - packages/mannkibaatpackage/lib/assets/sidebox.png
     - packages/mannkibaatpackage/lib/assets/pm.png
     - packages/mannkibaatpackage/lib/assets/pm2.png
-    - packages/mannkibaatpackagelib/assets/formsuccess.png
-    - packages/mannkibaatpackagelib/assets/footer.png
-    - packages/mannkibaatpackagelib/assets/review1.png
-    - packages/mannkibaatpackagelib/assets/language.png
-    - packages/mannkibaatpackagelib/assets/review2.png
-    - packages/mannkibaatpackagelib/assets/drawer_temp.png
-    - packages/mannkibaatpackagelib/assets/formsuccess.png
+    - packages/mannkibaatpackage/lib/assets/formsuccess.png
+    - packages/mannkibaatpackage/lib/assets/footer.png
+    - packages/mannkibaatpackage/lib/assets/review1.png
+    - packages/mannkibaatpackage/lib/assets/language.png
+    - packages/mannkibaatpackage/lib/assets/review2.png
+    - packages/mannkibaatpackage/lib/assets/drawer_temp.png
+    - packages/mannkibaatpackage/lib/assets/formsuccess.png
   #
   # For details regarding assets in packages, see
   # https://flutter.dev/assets-and-images/#from-packages
