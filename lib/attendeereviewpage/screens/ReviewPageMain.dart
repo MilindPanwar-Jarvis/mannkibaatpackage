@@ -28,16 +28,16 @@ class AttendeeReviewPage extends StatefulWidget {
   final String? img1;
   final String? img2;
 
-  AttendeeReviewPage(
+  const AttendeeReviewPage(
       {Key? key,
-      required this.vidhanSabha,
-      required this.state,
-      required this.totalAttendees,
-      required this.booth,
-      required this.address,
-      required this.description,
-      required this.img1,
-      required this.img2})
+       this.vidhanSabha,
+       this.state,
+       this.totalAttendees,
+       this.booth,
+       this.address,
+       this.description,
+       this.img1,
+       this.img2})
       : super(key: key);
 
   @override

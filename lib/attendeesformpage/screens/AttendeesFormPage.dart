@@ -156,24 +156,12 @@ class AttendeesFormPage extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => AttendeeReviewPage(
-                                        vidhanSabha: AttendeeStorageService
-                                                .getvidhanSabhaName()
-                                            .toString(),
-                                        state: AttendeeStorageService
-                                                .getstateName()
-                                            .toString(),
-                                        totalAttendees: AttendeeStorageService
-                                                .gettotalAttendees()
-                                            .toString(),
-                                        booth: AttendeeStorageService
-                                                .getboothName()
-                                            .toString(),
-                                        address:
-                                            AttendeeStorageService.getaddress()
-                                                .toString(),
-                                        description: AttendeeStorageService
-                                                .getdescription()
-                                            .toString(),
+                                        vidhanSabha: " ",
+                                        state: " ",
+                                        totalAttendees:
+                                            totalAttendeesController.text,
+                                        address: addressController.text,
+                                        description: descriptionController.text,
                                         img1: AttendeeStorageService
                                                 .getimage1url()
                                             .toString(),
