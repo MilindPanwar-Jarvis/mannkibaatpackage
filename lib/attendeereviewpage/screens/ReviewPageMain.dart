@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
+import '../../Storage/AttendeesFormStorage.dart';
 import '../../formfillsuccesspage/screens/FormSuccess.dart';
 import '../../utils/appbar/AppBar.dart';
 import '../../utils/backgroundboxdecoration/BoxDecoration.dart';
@@ -16,7 +17,8 @@ import 'Images.dart';
 import 'TotalAttendee.dart';
 import 'VidharSabhaStates.dart';
 
-class AttendeeReviewPage extends StatelessWidget {
+class AttendeeReviewPage extends StatefulWidget {
+
   final String? vidhanSabha;
   final String? state;
   final String? totalAttendees;
@@ -37,7 +39,19 @@ class AttendeeReviewPage extends StatelessWidget {
       required this.img1,
       required this.img2})
       : super(key: key);
+
+  @override
+  State<AttendeeReviewPage> createState() => _AttendeeReviewPageState();
+}
+
+class _AttendeeReviewPageState extends State<AttendeeReviewPage> {
   final GlobalKey<ScaffoldState> _key = GlobalKey();
+
+  @override
+  void dispose() {
+    AttendeeStorageService.storage.erase();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -75,19 +89,19 @@ class AttendeeReviewPage extends StatelessWidget {
                       ],
                     ),
                     ReviewVidhanAndStates(
-                      vidhanSabha: vidhanSabha,
-                      state: state,
+                      vidhanSabha: widget.vidhanSabha,
+                      state: widget.state,
                     ),
                     const SizedBox(height: 24),
-                    ReviewTotalAttendee(totalAttendees: totalAttendees),
+                    ReviewTotalAttendee(totalAttendees: widget.totalAttendees),
                     const SizedBox(height: 24),
-                    ReviewBoothName(booth: booth),
+                    ReviewBoothName(booth: widget.booth),
                     const SizedBox(height: 24),
-                    ReviewBoothAddress(boothAddress: address),
+                    ReviewBoothAddress(boothAddress: widget.address),
                     const SizedBox(height: 24),
-                    ReviewDescription(description: description),
+                    ReviewDescription(description: widget.description),
                     const SizedBox(height: 24),
-                    ReviewImages(img1: img1, img2: img2),
+                    ReviewImages(img1: widget.img1, img2: widget.img2),
                     const SizedBox(height: 43),
                     SizedBox(
                       width: Constants.buttonSizeBoxWidth,
