@@ -7,7 +7,8 @@ import '../network/services/DashApi.dart';
 import 'DashState.dart';
 
 class DashCubit extends Cubit<DashStates> {
-  DashCubit() : super(DashInitialState());
+  final String authenticationToken;
+  DashCubit(this.authenticationToken) : super(DashInitialState());
 
   final api = DashApi(Dio(BaseOptions(
       contentType: 'application/json', validateStatus: ((status) => true))));
@@ -15,7 +16,7 @@ class DashCubit extends Cubit<DashStates> {
   Future getDashData() async {
     try {
       emit(DashLoadingState());
-      String? token = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.1aBzmXruUAVV7ancpI1gu6GhOSso9xUqONf2DZ9ICmA";
+      String? token = authenticationToken;
       final res = await api.getEvents('Bearer $token');
       print(res.response.requestOptions.uri);
 

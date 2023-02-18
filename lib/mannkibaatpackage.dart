@@ -2,11 +2,13 @@ library mannkibaatpackage;
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mannkibaatpackage/reportedprogramspage/cubit/DashCubit.dart';
 import 'package:mannkibaatpackage/reportedprogramspage/screens/Dashboard.dart';
 import 'package:mannkibaatpackage/values/AppColors.dart';
 
 class MainButton extends StatelessWidget {
-  const MainButton({Key? key}) : super(key: key);
+  final String authenticationToken;
+  const MainButton({Key? key, required this.authenticationToken}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +22,7 @@ class MainButton extends StatelessWidget {
           backgroundColor: MaterialStateProperty.all(AppColor().buttonColor),
         ),
         onPressed: () {
+          DashCubit(authenticationToken);
           Navigator.push(
               context, MaterialPageRoute(builder: (counter) => Dashboard()));
         },
