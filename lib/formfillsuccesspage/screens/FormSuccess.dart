@@ -66,9 +66,9 @@ class FormSuccess extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  Navigator.pushAndRemoveUntil(context,
-                      MaterialPageRoute(builder: (context) => Dashboard(),), (
-                          route) => false);
+
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => const Dashboard()));
                 },
                 child: Text(
                   'सभी कार्यक्रमों में जाएं',
