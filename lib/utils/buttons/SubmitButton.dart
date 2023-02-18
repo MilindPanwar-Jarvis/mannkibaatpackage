@@ -23,7 +23,7 @@ class SubmitButton extends StatelessWidget {
         ),
         onPressed: onPress,
         child: Text(
-          "Submit",
+          "जमा करना",
           style: GoogleFonts.quicksand(
               fontWeight: FontWeight.w600,
               fontSize: 20,

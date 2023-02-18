@@ -60,7 +60,7 @@ class AttendeeReviewPage extends StatelessWidget {
                         SizedBox(
                             width: 200,
                             child: ListTile(
-                              title: Text("Review",
+                              title: Text("समीक्षा",
                                   style: GoogleFonts.publicSans(
                                       fontWeight: FontWeight.w600,
                                       fontSize: 20,

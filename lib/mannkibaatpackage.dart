@@ -7,8 +7,9 @@ import 'package:mannkibaatpackage/reportedprogramspage/screens/Dashboard.dart';
 import 'package:mannkibaatpackage/values/AppColors.dart';
 
 class MainButton extends StatelessWidget {
+  final String text;
   final String authenticationToken;
-  const MainButton({Key? key, required this.authenticationToken}) : super(key: key);
+  const MainButton({Key? key, required this.authenticationToken, required this.text}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,7 @@ class MainButton extends StatelessWidget {
               context, MaterialPageRoute(builder: (counter) => Dashboard()));
         },
         child: Text(
-          "testing",
+          text,
           style: GoogleFonts.quicksand(
               fontWeight: FontWeight.w600,
               fontSize: 16,

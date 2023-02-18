@@ -18,7 +18,7 @@ class ReviewVidhanAndStates extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Vidhan Sabha",
+              Text("विधान सभा",
                   style: GoogleFonts.publicSans(
                       fontWeight: FontWeight.w400,
                       fontSize: 16,
@@ -38,7 +38,7 @@ class ReviewVidhanAndStates extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("State",
+              Text("राज्य",
                   style: GoogleFonts.publicSans(
                       fontWeight: FontWeight.w400,
                       fontSize: 16,

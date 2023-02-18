@@ -30,7 +30,7 @@ void image1Upload(BuildContext context) {
                     Icons.photo_library,
                   ),
                   title: Text(
-                    'Gallery',
+                    'गेलरी',
                     style: GoogleFonts.publicSans(
                         color: AppColor().textColor,
                         fontWeight: FontWeight.w400),
@@ -51,7 +51,7 @@ void image1Upload(BuildContext context) {
                   Icons.photo_camera,
                 ),
                 title: Text(
-                  'Camera',
+                  'कैमरा',
                   style: GoogleFonts.publicSans(
                       color: AppColor().textColor, fontWeight: FontWeight.w400),
                 ),
@@ -97,7 +97,7 @@ void image2Upload(BuildContext context) {
                     Icons.photo_library,
                   ),
                   title: Text(
-                    'Gallery',
+                    'गेलरी',
                     style: GoogleFonts.publicSans(
                         color: AppColor().textColor,
                         fontWeight: FontWeight.w400),
@@ -118,7 +118,7 @@ void image2Upload(BuildContext context) {
                   Icons.photo_camera,
                 ),
                 title: Text(
-                  'Camera',
+                  'कैमरा',
                   style: GoogleFonts.publicSans(
                       color: AppColor().textColor, fontWeight: FontWeight.w400),
                 ),

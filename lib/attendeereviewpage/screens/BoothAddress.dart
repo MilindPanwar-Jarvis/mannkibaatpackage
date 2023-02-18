@@ -11,7 +11,7 @@ class ReviewBoothAddress extends StatelessWidget {
   Widget build(BuildContext context) {
     return  SizedBox(
         child: ListTile(
-            title: Text("Address",
+            title: Text("पता",
                 style: GoogleFonts.publicSans(
                     fontWeight: FontWeight.w400,
                     fontSize: 16,

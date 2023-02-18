@@ -43,7 +43,7 @@ class AttendeesFormPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Enter Details',
+                    'विवरण दर्ज करें',
                     style: GoogleFonts.publicSans(
                         fontSize: 20,
                         color: AppColor().textColor,
@@ -53,7 +53,7 @@ class AttendeesFormPage extends StatelessWidget {
                   const BoothDropDown(),
                   const SizedBox(height: 20),
                   Text(
-                    'Total Attendees *',
+                    'कुल उपस्थित *',
                     style: GoogleFonts.publicSans(
                         fontSize: 16,
                         color: AppColor().textColor,
@@ -80,7 +80,7 @@ class AttendeesFormPage extends StatelessWidget {
                       }),
                   const SizedBox(height: 20),
                   Text(
-                    'Address',
+                    'पता',
                     style: GoogleFonts.publicSans(
                         fontSize: 16,
                         color: AppColor().textColor,
@@ -104,7 +104,7 @@ class AttendeesFormPage extends StatelessWidget {
                       }),
                   const SizedBox(height: 15),
                   Text(
-                    'Description',
+                    'विवरण',
                     style: GoogleFonts.publicSans(
                         fontSize: 16,
                         color: AppColor().textColor,
@@ -136,7 +136,7 @@ class AttendeesFormPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'Upload Images',
+                    'तश्वीरें अपलोड करो',
                     style: GoogleFonts.publicSans(
                         fontSize: 16,
                         color: AppColor().textColor,

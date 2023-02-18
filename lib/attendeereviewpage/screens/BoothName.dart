@@ -9,7 +9,7 @@ class ReviewBoothName extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
         child: ListTile(
-            title: Text("Booth",
+            title: Text("बूथ",
                 style: GoogleFonts.publicSans(
                     fontWeight: FontWeight.w400,
                     fontSize: 16,

@@ -54,7 +54,7 @@ class _DashboardState extends State<Dashboard> {
                     alignment: Alignment.topLeft,
                     child: Padding(
                       padding: const EdgeInsets.only(top: 14),
-                      child: Text('Your Reported Programs',
+                      child: Text('आपके रिपोर्ट किए गए कार्यक्रम',
                           style: GoogleFonts.publicSans(
                               fontSize: 20, fontWeight: FontWeight.w600)),
                     ),
@@ -66,7 +66,7 @@ class _DashboardState extends State<Dashboard> {
                       builder: (context, state) {
                         if (state is DashInitialState ||
                             state is DashLoadingState) {
-                          return Center(child: CircularProgressIndicator());
+                          return const Center(child: CircularProgressIndicator());
                         } else if (state is DashGotEventsState) {
                           return ListView.builder(
                             itemCount: state.dashModal.data.length,
@@ -125,7 +125,7 @@ class _DashboardState extends State<Dashboard> {
                             },
                           );
                         } else {
-                          return Center(
+                          return const Center(
                             child: Text(
                               'ERROR',
                               style: TextStyle(fontSize: 20),

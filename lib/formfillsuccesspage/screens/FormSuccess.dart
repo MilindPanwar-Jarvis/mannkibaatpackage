@@ -40,7 +40,7 @@ class FormSuccess extends StatelessWidget {
               ),
               Align(
                   child: Text(
-                'Program Reported Successfully',
+                'कार्यक्रम सफलतापूर्वक रिपोर्ट किया गया',
                 style: GoogleFonts.publicSans(
                     fontWeight: FontWeight.w700,
                     fontSize: 18,
@@ -51,7 +51,7 @@ class FormSuccess extends StatelessWidget {
               ),
               Align(
                 child: Text(
-                  'Yay! Keep doing the good work !',
+                  'वाह! अच्छा काम करते रहो!',
                   style: GoogleFonts.publicSans(
                       fontWeight: FontWeight.w400,
                       fontSize: 16,
@@ -71,7 +71,7 @@ class FormSuccess extends StatelessWidget {
                   });
                 },
                 child: Text(
-                  'Go to all programs',
+                  'सभी कार्यक्रमों में जाएं',
                   style: GoogleFonts.publicSans(
                       decoration: TextDecoration.underline,
                       fontWeight: FontWeight.w700,

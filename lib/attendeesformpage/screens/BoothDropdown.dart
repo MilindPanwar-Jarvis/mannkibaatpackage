@@ -64,7 +64,7 @@ class _BoothDropDownState extends State<BoothDropDown> {
         ),
         decoration: const InputDecoration(
           border: InputBorder.none,
-          hintText: '   States',
+          hintText: '   राज्य',
           //contentPadding: EdgeInsets.only(le),
         ),
         items:

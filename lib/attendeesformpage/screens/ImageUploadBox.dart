@@ -63,7 +63,7 @@ class ImageBox extends StatelessWidget {
                                   const SizedBox(height: 5),
 
                                   Text(
-                                    "Upload",
+                                    "अपलोड",
                                     style:
                                         TextStyle(color: AppColor().textColor),
                                   )
@@ -95,7 +95,7 @@ class ImageBox extends StatelessWidget {
                                     color: AppColor().buttonColor,
                                   ),
                                   const SizedBox(height: 5),
-                                  Text("Upload",
+                                  Text("अपलोड",
                                       style: TextStyle(
                                           color: AppColor().textColor))
                                 ],
