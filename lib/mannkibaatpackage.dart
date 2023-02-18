@@ -27,7 +27,7 @@ class MainButton extends StatelessWidget {
               context, MaterialPageRoute(builder: (counter) => Dashboard()));
         },
         child: Text(
-          "Mann ki Baat",
+          "testing",
           style: GoogleFonts.quicksand(
               fontWeight: FontWeight.w600,
               fontSize: 16,
