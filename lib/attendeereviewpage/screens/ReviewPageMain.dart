@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 import '../../Storage/AttendeesFormStorage.dart';
 import '../../formfillsuccesspage/screens/FormSuccess.dart';
 import '../../utils/appbar/AppBar.dart';
@@ -18,7 +17,6 @@ import 'TotalAttendee.dart';
 import 'VidharSabhaStates.dart';
 
 class AttendeeReviewPage extends StatefulWidget {
-
   final String? vidhanSabha;
   final String? state;
   final String? totalAttendees;
@@ -30,14 +28,14 @@ class AttendeeReviewPage extends StatefulWidget {
 
   const AttendeeReviewPage(
       {Key? key,
-       this.vidhanSabha,
-       this.state,
-       this.totalAttendees,
-       this.booth,
-       this.address,
-       this.description,
-       this.img1,
-       this.img2})
+      this.vidhanSabha,
+      this.state,
+      this.totalAttendees,
+      this.booth,
+      this.address,
+      this.description,
+      this.img1,
+      this.img2})
       : super(key: key);
 
   @override

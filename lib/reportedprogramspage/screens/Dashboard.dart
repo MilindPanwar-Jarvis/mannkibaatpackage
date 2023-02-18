@@ -12,7 +12,7 @@ import '../cubit/DashState.dart';
 import 'ProgramCard.dart';
 
 class Dashboard extends StatefulWidget {
-  Dashboard({Key? key}) : super(key: key);
+  const Dashboard({Key? key}) : super(key: key);
 
   @override
   State<Dashboard> createState() => _DashboardState();
@@ -66,7 +66,8 @@ class _DashboardState extends State<Dashboard> {
                       builder: (context, state) {
                         if (state is DashInitialState ||
                             state is DashLoadingState) {
-                          return const Center(child: CircularProgressIndicator());
+                          return const Center(
+                              child: CircularProgressIndicator());
                         } else if (state is DashGotEventsState) {
                           return ListView.builder(
                             itemCount: state.dashModal.data.length,
@@ -107,6 +108,7 @@ class _DashboardState extends State<Dashboard> {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
+                                          settings: const RouteSettings(name: "dashboard"),
                                             builder: (context) =>
                                                 AttendeesFormPage()));
                                   }

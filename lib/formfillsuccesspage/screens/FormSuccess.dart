@@ -30,7 +30,10 @@ class FormSuccess extends StatelessWidget {
               Align(
                 alignment: Alignment.center,
                 child: Image(
-                  image: Image.asset("packages/mannkibaatpackage/lib/assets/formsuccess.png").image,
+                  image: Image
+                      .asset(
+                      "packages/mannkibaatpackage/lib/assets/formsuccess.png")
+                      .image,
                   //width: 300,
                   height: 200,
                 ),
@@ -40,12 +43,12 @@ class FormSuccess extends StatelessWidget {
               ),
               Align(
                   child: Text(
-                'कार्यक्रम सफलतापूर्वक रिपोर्ट किया गया',
-                style: GoogleFonts.publicSans(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 18,
-                    color: AppColor().dashboardTextColorDark),
-              )),
+                    'कार्यक्रम सफलतापूर्वक रिपोर्ट किया गया',
+                    style: GoogleFonts.publicSans(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 18,
+                        color: AppColor().dashboardTextColorDark),
+                  )),
               const Padding(
                 padding: EdgeInsets.only(top: 10),
               ),
@@ -63,10 +66,9 @@ class FormSuccess extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (BuildContext context) {
-                    return Dashboard();
-                  }),);
+                  Navigator.pushAndRemoveUntil(context,
+                      MaterialPageRoute(builder: (context) => Dashboard(),), (
+                          route) => false);
                 },
                 child: Text(
                   'सभी कार्यक्रमों में जाएं',
