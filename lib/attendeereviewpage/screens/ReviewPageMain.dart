@@ -17,14 +17,14 @@ import 'TotalAttendee.dart';
 import 'VidharSabhaStates.dart';
 
 class AttendeeReviewPage extends StatelessWidget {
-  final String vidhanSabha;
-  final String state;
-  final String totalAttendees;
-  final String booth;
-  final String address;
-  final String description;
-  final String img1;
-  final String img2;
+  final String? vidhanSabha;
+  final String? state;
+  final String? totalAttendees;
+  final String? booth;
+  final String? address;
+  final String? description;
+  final String? img1;
+  final String? img2;
 
   AttendeeReviewPage(
       {Key? key,

@@ -4,8 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../values/AppColors.dart';
 
 class ReviewVidhanAndStates extends StatelessWidget {
-  final String vidhanSabha;
-  final String state;
+  final String? vidhanSabha;
+  final String? state;
   const ReviewVidhanAndStates({Key? key, required this.vidhanSabha, required this.state}) : super(key: key);
 
   @override

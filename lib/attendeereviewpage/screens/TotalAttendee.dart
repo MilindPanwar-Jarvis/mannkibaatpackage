@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../values/AppColors.dart';
 
 class ReviewTotalAttendee extends StatelessWidget {
-  final String totalAttendees;
+  final String? totalAttendees;
 
   const ReviewTotalAttendee({Key? key, required this.totalAttendees})
       : super(key: key);

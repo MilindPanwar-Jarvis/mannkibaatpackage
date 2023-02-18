@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../values/AppColors.dart';
 
 class ReviewDescription extends StatelessWidget {
-  final String description;
+  final String? description;
   const ReviewDescription({Key? key, required this.description}) : super(key: key);
 
   @override

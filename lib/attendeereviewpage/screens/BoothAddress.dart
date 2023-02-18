@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../values/AppColors.dart';
 
 class ReviewBoothAddress extends StatelessWidget {
-  final String boothAddress;
+  final String? boothAddress;
   const ReviewBoothAddress({Key? key, required this.boothAddress}) : super(key: key);
 
   @override

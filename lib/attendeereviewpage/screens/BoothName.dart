@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../values/AppColors.dart';
 class ReviewBoothName extends StatelessWidget {
-  final String booth;
+  final String? booth;
   const ReviewBoothName({Key? key, required this.booth}) : super(key: key);
 
   @override
