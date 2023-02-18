@@ -18,7 +18,7 @@ class ReviewTotalAttendee extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                     fontSize: 16,
                     color: AppColor().reviewFormTextColor)),
-            subtitle: Text("${totalAttendees}",
+            subtitle: Text(totalAttendees ?? " ",
                 style: GoogleFonts.publicSans(
                     color: AppColor().buttonColor,
                     fontWeight: FontWeight.w600,

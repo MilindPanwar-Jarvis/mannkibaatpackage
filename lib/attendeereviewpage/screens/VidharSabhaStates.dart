@@ -43,7 +43,7 @@ class ReviewVidhanAndStates extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                       fontSize: 16,
                       color: AppColor().reviewFormTextColor)),
-              Text("$state",
+              Text(state ?? " ",
                   style: GoogleFonts.publicSans(
                       color: AppColor().buttonColor,
                       fontWeight: FontWeight.w600,

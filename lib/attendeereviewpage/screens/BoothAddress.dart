@@ -17,7 +17,8 @@ class ReviewBoothAddress extends StatelessWidget {
                     fontSize: 16,
                     color: AppColor().reviewFormTextColor)),
             subtitle: Text(
-                "${boothAddress}",
+                boothAddress ?? " ",
+
                 style: GoogleFonts.publicSans(
                     color: AppColor().buttonColor,
                     fontWeight: FontWeight.w600,

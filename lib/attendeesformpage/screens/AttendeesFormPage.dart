@@ -136,7 +136,7 @@ class AttendeesFormPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'तश्वीरें अपलोड करो',
+                    'तश्वीरें अपलोड करें',
                     style: GoogleFonts.publicSans(
                         fontSize: 16,
                         color: AppColor().textColor,

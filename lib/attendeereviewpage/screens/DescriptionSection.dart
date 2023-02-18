@@ -17,7 +17,7 @@ class ReviewDescription extends StatelessWidget {
                     fontSize: 16,
                     color: AppColor().reviewFormTextColor)),
             subtitle: Text(
-                "${description}",
+                description ?? " ",
                 style: GoogleFonts.publicSans(
                     color: const Color(0xFF444446),
                     fontWeight: FontWeight.w400,
