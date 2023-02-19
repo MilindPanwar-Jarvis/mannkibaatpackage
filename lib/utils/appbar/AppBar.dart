@@ -17,7 +17,7 @@ class AppBarWidget {
         //           globalKey.currentState?.openDrawer();
         //         },
         //         icon: Image(
-        //             image: Image.asset("assets/sidebox.png").image,
+        //             image: Image.asset("packages/mannkibaatpackage/lib/assets/sidebox.png").image,
         //             width: 26,
         //             height: 18),
         //       ),
@@ -25,7 +25,7 @@ class AppBarWidget {
         //     Padding(
         //       padding: const EdgeInsets.only(right: 4),
         //       child: Image(
-        //         image: Image.asset("assets/BJP-logo.png").image,
+        //         image: Image.asset("packages/mannkibaatpackage/lib/assets/BJP-logo.png").image,
         //         width: 21,
         //         height: 21,
         //       ),
@@ -69,24 +69,11 @@ class AppBarWidget {
         //   ),
         // ],
 
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(right: 4),
-              child: Image(
-                image: Image.asset("assets/BJP-logo.png").image,
-                width: 21,
-                height: 21,
-              ),
-            ),
-            Text("भारती जनता पार्टी",
-                style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 10.91,
-                    color: AppColor().textColor)),
-          ],
-        ),
+        title: Text("भारतीय जनता पार्टी",
+            style: GoogleFonts.poppins(
+                fontWeight: FontWeight.w700,
+                fontSize: 10.91,
+                color: AppColor().textColor)),
         centerTitle: true,
         automaticallyImplyLeading: false,
         titleSpacing: 0);
