@@ -3,7 +3,7 @@ library mannkibaatpackage;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mannkibaatpackage/reportedprogramspage/cubit/DashCubit.dart';
-import 'package:mannkibaatpackage/reportedprogramspage/screens/Dashboard.dart';
+import 'package:mannkibaatpackage/reportedprogramspage/screens/newscreens/MainDashboard.dart';
 import 'package:mannkibaatpackage/values/AppColors.dart';
 
 class MainButton extends StatelessWidget {
@@ -25,7 +25,7 @@ class MainButton extends StatelessWidget {
         onPressed: () {
           DashCubit(authenticationToken);
           Navigator.push(
-              context, MaterialPageRoute(builder: (counter) => Dashboard()));
+              context, MaterialPageRoute(builder: (counter) => DashboardMainScreen()));
         },
         child: Text(
           text,

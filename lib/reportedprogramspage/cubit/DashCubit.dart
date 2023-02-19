@@ -14,8 +14,9 @@ class DashCubit extends Cubit<DashStates> {
       contentType: 'application/json', validateStatus: ((status) => true))));
 
   Future getDashData() async {
+    emit(DashLoadingState());
     try {
-      emit(DashLoadingState());
+
       String? token = authenticationToken;
       final res = await api.getEvents('Bearer $token');
       print(res.response.requestOptions.uri);

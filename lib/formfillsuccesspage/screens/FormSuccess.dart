@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-
-import '../../reportedprogramspage/screens/Dashboard.dart';
+import '../../reportedprogramspage/screens/newscreens/MainDashboard.dart';
 import '../../utils/appbar/AppBar.dart';
 import '../../utils/backgroundboxdecoration/BoxDecoration.dart';
 import '../../utils/drawer/UserProfileDrawer.dart';
@@ -67,8 +65,7 @@ class FormSuccess extends StatelessWidget {
               TextButton(
                 onPressed: () {
 
-                  Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => const Dashboard()));
+                  Navigator.push(context,MaterialPageRoute(builder: (context) => const DashboardMainScreen()));
                 },
                 child: Text(
                   'सभी कार्यक्रमों में जाएं',
