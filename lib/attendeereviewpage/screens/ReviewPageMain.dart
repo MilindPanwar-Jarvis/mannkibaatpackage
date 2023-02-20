@@ -91,7 +91,7 @@ class _AttendeeReviewPageState extends State<AttendeeReviewPage> {
                       ],
                     ),
                     ReviewVidhanAndStates(
-                      vidhanSabha: cubit.vidhanSabhaSelected!.name.toString() ?? " ",
+                      vidhanSabha: cubit.vidhanSabhaSelected!.name.toString(),
                       state: "Assam",
                     ),
                     const SizedBox(height: 24),
