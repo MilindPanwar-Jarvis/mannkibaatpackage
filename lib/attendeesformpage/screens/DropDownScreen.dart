@@ -18,7 +18,8 @@ class DropDown extends StatefulWidget {
 class _DropDownState extends State<DropDown> {
   @override
   Widget build(BuildContext context) {
-    final cubit = BlocProvider.of<FetchCubit>(context);
+    final cubit = context.read<FetchCubit>();
+    cubit.fetchAcId();
 
     return  Container(
       color: Colors.white,
