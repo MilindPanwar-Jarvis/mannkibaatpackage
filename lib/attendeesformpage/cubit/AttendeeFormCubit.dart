@@ -3,17 +3,16 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mannkibaatpackage/attendeesformpage/network/services/FetchAPI.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../Storage/AttendeesFormStorage.dart';
 import '../network/model/Booth.dart';
-import '../network/services/FetchBooth.dart';
 import 'AttendeeFormState.dart';
 
 class AttendeeFormCubit extends Cubit<AttendeeFormState> {
-  final api = AuthApi(Dio(BaseOptions(
+  final api = FetchAPI(Dio(BaseOptions(
       contentType: 'application/json', validateStatus: ((status) => true))));
   String? tempimage1;
   String? tempimage2;

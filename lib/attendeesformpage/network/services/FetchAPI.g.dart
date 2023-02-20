@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'FetchBooth.dart';
+part of 'FetchAPI.dart';
 
 // **************************************************************************
 // RetrofitGenerator
@@ -8,8 +8,8 @@ part of 'FetchBooth.dart';
 
 // ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers
 
-class _AuthApi implements AuthApi {
-  _AuthApi(
+class _FetchAPI implements FetchAPI {
+  _FetchAPI(
     this._dio, {
     this.baseUrl,
   }) {
@@ -19,6 +19,36 @@ class _AuthApi implements AuthApi {
   final Dio _dio;
 
   String? baseUrl;
+
+  @override
+  Future<HttpResponse<dynamic>> fetchStates(token) async {
+    const _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{
+      r'Content-Type': 'application/json',
+      r'Accept': 'application/json',
+      r'Authorization': token,
+    };
+    _headers.removeWhere((k, v) => v == null);
+    final _data = <String, dynamic>{};
+    final _result =
+        await _dio.fetch(_setStreamType<HttpResponse<dynamic>>(Options(
+      method: 'GET',
+      headers: _headers,
+      extra: _extra,
+      contentType: 'application/json',
+    )
+            .compose(
+              _dio.options,
+              'api/event_tracker/get_country_state',
+              queryParameters: queryParameters,
+              data: _data,
+            )
+            .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
+    final value = _result.data;
+    final httpResponse = HttpResponse(value, _result);
+    return httpResponse;
+  }
 
   @override
   Future<HttpResponse<dynamic>> fetchAc(
@@ -33,7 +63,7 @@ class _AuthApi implements AuthApi {
       r'Authorization': token,
     };
     _headers.removeWhere((k, v) => v == null);
-    final _data = {'ac_id': data};
+    final _data = {'country_state_id': data};
     final _result =
         await _dio.fetch(_setStreamType<HttpResponse<dynamic>>(Options(
       method: 'POST',
@@ -43,7 +73,7 @@ class _AuthApi implements AuthApi {
     )
             .compose(
               _dio.options,
-              'api/event_tracker/ac_sks',
+              'api/event_tracker/get_acs',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -66,7 +96,7 @@ class _AuthApi implements AuthApi {
       r'Authorization': token,
     };
     _headers.removeWhere((k, v) => v == null);
-    final _data = {'sk_id': data};
+    final _data = {'ac_id': data};
     final _result =
         await _dio.fetch(_setStreamType<HttpResponse<dynamic>>(Options(
       method: 'POST',
@@ -76,7 +106,7 @@ class _AuthApi implements AuthApi {
     )
             .compose(
               _dio.options,
-              'api/event_tracker/get_sk_booth',
+              'api/event_tracker/get_booth',
               queryParameters: queryParameters,
               data: _data,
             )

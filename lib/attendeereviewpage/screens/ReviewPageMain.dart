@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../Storage/AttendeesFormStorage.dart';
+import '../../attendeesformpage/cubit/FetchCubit.dart';
 import '../../formfillsuccesspage/screens/FormSuccess.dart';
 import '../../utils/appbar/AppBar.dart';
 import '../../utils/backgroundboxdecoration/BoxDecoration.dart';
@@ -53,6 +55,8 @@ class _AttendeeReviewPageState extends State<AttendeeReviewPage> {
 
   @override
   Widget build(BuildContext context) {
+    final cubit = context.read<FetchCubit>();
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBarWidget.getAppBar(_key, context),
@@ -87,13 +91,13 @@ class _AttendeeReviewPageState extends State<AttendeeReviewPage> {
                       ],
                     ),
                     ReviewVidhanAndStates(
-                      vidhanSabha: widget.vidhanSabha,
-                      state: widget.state,
+                      vidhanSabha: cubit.vidhanSabhaSelected!.name.toString() ?? " ",
+                      state: "Assam",
                     ),
                     const SizedBox(height: 24),
                     ReviewTotalAttendee(totalAttendees: widget.totalAttendees),
                     const SizedBox(height: 24),
-                    ReviewBoothName(booth: widget.booth),
+                    ReviewBoothName(booth: cubit.boothSelected!.name.toString()),
                     const SizedBox(height: 24),
                     ReviewBoothAddress(boothAddress: widget.address),
                     const SizedBox(height: 24),

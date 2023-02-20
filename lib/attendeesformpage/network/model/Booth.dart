@@ -1,12 +1,12 @@
 // To parse this JSON data, do
 //
-//     final states = statesFromJson(jsonString);
+//     final booth = boothFromJson(jsonString);
 
 import 'dart:convert';
 
-Booth statesFromJson(String str) => Booth.fromJson(json.decode(str));
+Booth boothFromJson(String str) => Booth.fromJson(json.decode(str));
 
-String statesToJson(Booth data) => json.encode(data.toJson());
+String boothToJson(Booth data) => json.encode(data.toJson());
 
 class Booth {
   Booth({
@@ -18,13 +18,13 @@ class Booth {
 
   bool status;
   String message;
-  List<ApiDataList> data;
+  List<Datum> data;
   String code;
 
   factory Booth.fromJson(Map<String, dynamic> json) => Booth(
     status: json["status"],
     message: json["message"],
-    data: List<ApiDataList>.from(json["data"].map((x) => ApiDataList.fromJson(x))),
+    data: List<Datum>.from(json["data"].map((x) => Datum.fromJson(x))),
     code: json["code"],
   );
 
@@ -36,22 +36,34 @@ class Booth {
   };
 }
 
-class ApiDataList {
-  ApiDataList({
-    required this.name,
+class Datum {
+  Datum({
     required this.id,
+    required this.number,
+    required this.name,
+    required this.intNumber,
+    required this.stringNumber,
   });
 
-  String name;
   int id;
+  String number;
+  String name;
+  int intNumber;
+  String stringNumber;
 
-  factory ApiDataList.fromJson(Map<String, dynamic> json) => ApiDataList(
-    name: json["name"],
+  factory Datum.fromJson(Map<String, dynamic> json) => Datum(
     id: json["id"],
+    number: json["number"],
+    name: json["name"],
+    intNumber: json["int_number"],
+    stringNumber: json["string_number"],
   );
 
   Map<String, dynamic> toJson() => {
-    "name": name,
     "id": id,
+    "number": number,
+    "name": name,
+    "int_number": intNumber,
+    "string_number": stringNumber,
   };
 }

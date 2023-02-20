@@ -11,7 +11,7 @@ import '../../utils/drawer/UserProfileDrawer.dart';
 import '../../values/AppColors.dart';
 import '../../values/Constants.dart';
 import '../cubit/AttendeeFormCubit.dart';
-import 'BoothDropdown.dart';
+import 'DropDownScreen.dart';
 import 'ImageUploadBox.dart';
 
 class AttendeesFormPage extends StatelessWidget {
@@ -50,7 +50,7 @@ class AttendeesFormPage extends StatelessWidget {
                         fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 25),
-                  const BoothDropDown(),
+                  const DropDown(),
                   const SizedBox(height: 20),
                   Text(
                     'कुल उपस्थित *',
