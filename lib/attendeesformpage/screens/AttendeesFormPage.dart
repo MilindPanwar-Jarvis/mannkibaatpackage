@@ -11,15 +11,24 @@ import '../../utils/drawer/UserProfileDrawer.dart';
 import '../../values/AppColors.dart';
 import '../../values/Constants.dart';
 import '../cubit/AttendeeFormCubit.dart';
+import '../cubit/FetchCubit.dart';
 import 'DropDownScreen.dart';
 import 'ImageUploadBox.dart';
 
-class AttendeesFormPage extends StatelessWidget {
+class AttendeesFormPage extends StatefulWidget {
+  AttendeesFormPage({Key? key}) : super(key: key);
+
+  @override
+  State<AttendeesFormPage> createState() => _AttendeesFormPageState();
+}
+
+class _AttendeesFormPageState extends State<AttendeesFormPage> {
   TextEditingController totalAttendeesController = TextEditingController();
+
   TextEditingController addressController = TextEditingController();
+
   TextEditingController descriptionController = TextEditingController();
 
-  AttendeesFormPage({Key? key}) : super(key: key);
   final GlobalKey<ScaffoldState> _key = GlobalKey();
 
   @override
@@ -50,7 +59,10 @@ class AttendeesFormPage extends StatelessWidget {
                         fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 25),
-                  const DropDown(),
+                  BlocProvider(
+                    create: (context) => FetchCubit(),
+                    child: const DropDown(),
+                  ),
                   const SizedBox(height: 20),
                   Text(
                     'कुल उपस्थित *',
